@@ -13,7 +13,7 @@ public class SlackDirectConnectionWithBuilder
 {
     public static void main(String[] args) throws IOException
     {
-        SlackSession session = SlackSessionFactory.getSlackSessionBuilder("my-bot-auth-token").build();
+        SlackSession session = SlackSessionFactory.getSlackSessionBuilder("my-user-auth-token", "my-bot-auth-token").build();
         session.connect();
     }
 }

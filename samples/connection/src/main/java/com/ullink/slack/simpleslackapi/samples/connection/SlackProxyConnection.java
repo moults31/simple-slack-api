@@ -14,7 +14,7 @@ public class SlackProxyConnection
 {
     public static void main(String[] args) throws IOException
     {
-        SlackSession session = SlackSessionFactory.getSlackSessionBuilder("my-bot-auth-token")
+        SlackSession session = SlackSessionFactory.getSlackSessionBuilder("my-user-auth-token", "my-bot-auth-token")
                                                   .withProxy(Proxy.Type.HTTP, "my.proxy.address", 1234)
                                                   .build();
         session.connect();
